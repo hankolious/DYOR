@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "DYOR_backend": {
+      "main": "src/DYOR_backend/main.mo",
+      "type": "motoko"
+    },
+    "DYOR_frontend": {
+      "dependencies": [
+        "DYOR_backend"
+      ],
+      "source": [
+        "src/DYOR_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "DYOR_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
